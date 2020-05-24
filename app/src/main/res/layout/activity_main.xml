@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75686363"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="297dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:text="Enter Your Year Of Birth :"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="82dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
+        android:text="Age : 0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <EditText
+        android:id="@+id/inputYear"
+        android:layout_width="291dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="InputYear"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtYear" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="134dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onSubmit"
+        android:text="SUBMIT"
+        android:textColor="#0E0E0E"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputYear" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
